@@ -1,0 +1,189 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * ============================================================================
+ *  DESIGN SYSTEM — Advocacia João Silvestre Sobrinho
+ * ============================================================================
+ *  Direção: clássico e sóbrio, de escritório tradicional. Fundo claro
+ *  branco-quente, blocos escuros (sidebar, hero, rodapé) e bronze da logo
+ *  apenas em detalhes, linhas, botões e ícones.
+ *
+ *  Contrastes (WCAG):
+ *   - ink #1E1B19 sobre paper #FAF8F4 ............ 16,2:1  (AAA)
+ *   - muted-ink #5C534C sobre paper .............. 7,0:1   (AAA)
+ *   - bronze-ink #8A5A26 sobre paper ............. 5,5:1   (AA) → texto bronze em fundo claro
+ *   - bronze #B07A3A sobre paper ................. 3,5:1   → SÓ ícones, linhas e bordas (mín. 3:1)
+ *   - bronze #B07A3A sobre ink ................... 4,6:1   (AA)
+ *   - ink sobre botão bronze ..................... 4,6:1   (AA)
+ *   - gold #D9B98C sobre ink ..................... 9,2:1   (AAA)
+ *   - cream #F5EFE6 sobre ink .................... 15,0:1  (AAA)
+ *   - muted-cream #BDB3A8 sobre ink .............. 8,3:1   (AAA)
+ * ============================================================================
+ */
+
+@theme inline {
+  /* Paleta da marca */
+  --color-ink: #1e1b19;
+  --color-ink-soft: #2a2522;
+  --color-paper: #faf8f4;
+  --color-paper-deep: #f2ede4;
+  --color-bronze: #b07a3a;
+  --color-bronze-light: #c08b4a;
+  --color-bronze-ink: #8a5a26;
+  --color-gold: #d9b98c;
+  --color-kraft: #c9ab80;
+  --color-cream: #f5efe6;
+  --color-muted-ink: #5c534c;
+  --color-muted-cream: #bdb3a8;
+
+  /* Tokens semânticos usados pelos componentes shadcn/ui */
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+  --color-border: rgb(30 27 25 / 0.14);
+  --color-input: rgb(30 27 25 / 0.28);
+  --color-ring: var(--color-bronze);
+  --color-destructive: #a3261b;
+
+  /* Tipografia (carregada via next/font em app/layout.tsx) */
+  --font-serif: var(--font-garamond), "EB Garamond", Georgia, serif;
+  --font-sans: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif;
+
+  --ease-calm: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-ink);
+  }
+
+  /* Foco sempre visível para quem navega pelo teclado */
+  :focus-visible {
+    outline: 2px solid var(--color-bronze);
+    outline-offset: 3px;
+  }
+
+  /* Compensa a barra superior fixa do celular ao navegar por âncoras */
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    section[id] {
+      scroll-margin-top: 0;
+    }
+  }
+}
+
+@layer components {
+  /* Linha fina em bronze usada como ornamento antes dos rótulos de seção */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background-color: var(--color-bronze);
+  }
+
+  /* Textura sutil (ruído) para os blocos escuros — sem imagem externa */
+  .texture-grain {
+    background-image:
+      radial-gradient(ellipse 80% 60% at 70% 0%, rgb(176 122 58 / 0.08), transparent 70%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+/*
+ * Animação de entrada ao rolar (componente <Reveal>).
+ * Só esconde o conteúdo quando o JavaScript está ativo (classe .js no <html>),
+ * para o site continuar legível sem JS e para buscadores.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 600ms var(--ease-calm),
+      transform 600ms var(--ease-calm);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .js [data-reveal][data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Pulso discreto do botão flutuante do WhatsApp */
+@keyframes wa-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(37 211 102 / 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgb(37 211 102 / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(37 211 102 / 0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wa-pulse {
+    animation: wa-pulse 2.6s ease-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
