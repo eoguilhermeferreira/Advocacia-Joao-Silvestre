@@ -79,16 +79,23 @@ export function Footer() {
         </div>
 
         {/* Crédito da agência que desenvolveu o site */}
-        <div className="mt-8 flex items-center justify-center gap-3 border-t border-cream/10 pt-6 text-xs tracking-[0.12em] uppercase sm:justify-start">
-          <span>Desenvolvido por</span>
-          <Image
-            src="/nodex.png"
-            alt="Nodex – Agência de Marketing Digital"
-            width={640}
-            height={131}
-            sizes="120px"
-            className="h-auto w-[7.5rem]"
-          />
+        <div className="mt-8 flex flex-col items-center gap-3 border-t border-cream/10 pt-8 text-center">
+          <span className="text-xs tracking-[0.14em] uppercase">Desenvolvido por</span>
+          <a
+            href="https://www.instagram.com/agencynodex/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-sm transition-opacity hover:opacity-85"
+          >
+            <Image
+              src="/nodex.png"
+              alt="Nodex – Agência de Marketing Digital (Instagram @agencynodex, abre em nova aba)"
+              width={640}
+              height={131}
+              sizes="(min-width: 640px) 280px, 240px"
+              className="h-auto w-60 sm:w-70"
+            />
+          </a>
         </div>
       </div>
     </footer>

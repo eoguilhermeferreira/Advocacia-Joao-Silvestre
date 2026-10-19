@@ -11,20 +11,27 @@ export function Hero() {
     <section
       id="inicio"
       aria-labelledby="hero-title"
-      className="texture-grain relative isolate flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden bg-ink px-5 py-14 text-cream sm:px-10 lg:min-h-svh lg:px-16 lg:py-20 xl:px-24"
+      className="texture-grain relative isolate flex min-h-[calc(100svh-4rem)] flex-col justify-start overflow-hidden bg-ink px-5 py-14 text-cream sm:justify-center sm:px-10 lg:min-h-svh lg:px-16 lg:py-20 xl:px-24"
     >
-      {/* Fundo: foto da fachada com sombreado escuro por cima, para o texto ficar legível */}
-      <Image
-        src="/fachada.jpg"
-        alt=""
-        fill
-        priority
-        sizes="(min-width: 1024px) calc(100vw - 17rem), 100vw"
-        className="-z-20 object-cover object-center"
-      />
+      {/*
+        Fundo: foto da fachada com sombreado por cima.
+        - Celular: a foto aparece inteira (quadrada) no topo e o sombreado escurece para baixo,
+          onde ficam os textos.
+        - Tablet/desktop: a foto cobre o hero; o sombreado é forte à esquerda (texto) e leve à direita.
+      */}
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 -z-20 aspect-square sm:inset-0 sm:aspect-auto">
+        <Image
+          src="/fachada.jpg"
+          alt=""
+          fill
+          priority
+          sizes="(min-width: 1024px) calc(100vw - 17rem), 100vw"
+          className="object-cover object-center"
+        />
+      </div>
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(30_27_25/0.94)_0%,rgb(30_27_25/0.86)_55%,rgb(30_27_25/0.72)_100%)]"
+        className="absolute inset-x-0 top-0 -z-10 aspect-square bg-[linear-gradient(180deg,rgb(30_27_25/0.2)_0%,rgb(30_27_25/0.35)_30%,rgb(30_27_25/0.78)_50%,rgb(30_27_25/0.9)_66%,rgb(30_27_25/1)_92%)] sm:inset-0 sm:aspect-auto sm:bg-[linear-gradient(100deg,rgb(30_27_25/0.93)_0%,rgb(30_27_25/0.88)_60%,rgb(30_27_25/0.55)_80%,rgb(30_27_25/0.3)_100%)]"
       />
 
       <div className="mx-auto w-full max-w-5xl">
@@ -87,7 +94,7 @@ export function Hero() {
             </Button>
           </div>
 
-          <p className="mt-6 inline-flex items-start gap-2 text-sm text-muted-cream">
+          <p className="mt-6 inline-flex items-start gap-2 text-sm text-cream/90">
             <MapPinIcon className="mt-0.5 size-4 shrink-0 text-bronze" aria-hidden="true" />
             <span>
               Atendimento presencial: {siteConfig.address.street}, {siteConfig.address.neighborhood}
