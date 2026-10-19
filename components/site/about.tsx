@@ -1,10 +1,8 @@
+import Image from "next/image";
 import { EyeIcon, LockKeyholeIcon, MessageCircleIcon } from "lucide-react";
 
 import { siteConfig } from "@/lib/site-config";
-import { Portrait } from "./portrait";
 import { Reveal } from "./reveal";
-
-const joao = siteConfig.lawyers[0];
 
 const values = [
   {
@@ -28,12 +26,17 @@ export function About() {
   return (
     <section id="sobre" aria-labelledby="sobre-title" className="bg-paper px-5 py-20 sm:px-10 lg:px-16 lg:py-28 xl:px-24">
       <div className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20">
-        <Reveal className="mx-auto w-full max-w-sm lg:sticky lg:top-16">
-          <Portrait name={joao.name} initials={joao.initials} photo={joao.photo} />
-          {/* Credencial em destaque */}
-          <div className="mt-8 border-l-2 border-bronze pl-4">
-            <p className="font-serif text-2xl font-semibold text-ink">{joao.name}</p>
-            <p className="mt-1 text-sm font-semibold tracking-[0.14em] text-bronze-ink uppercase">{joao.oab}</p>
+        {/* Foto da fachada do escritório, em moldura com filete bronze */}
+        <Reveal className="relative mx-auto w-full max-w-md lg:sticky lg:top-16">
+          <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 border border-bronze/60" />
+          <div className="relative aspect-square overflow-hidden bg-ink">
+            <Image
+              src="/fachada.jpg"
+              alt="Fachada do escritório Advocacia João Silvestre Sobrinho, Rua Domiciano Santana, 960, Avaré"
+              fill
+              sizes="(min-width: 1024px) 420px, 90vw"
+              className="object-cover"
+            />
           </div>
         </Reveal>
 
