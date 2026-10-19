@@ -13,6 +13,20 @@ export function Hero() {
       aria-labelledby="hero-title"
       className="texture-grain relative isolate flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden bg-ink px-5 py-14 text-cream sm:px-10 lg:min-h-svh lg:px-16 lg:py-20 xl:px-24"
     >
+      {/* Fundo: foto da fachada com sombreado escuro por cima, para o texto ficar legível */}
+      <Image
+        src="/fachada.jpg"
+        alt=""
+        fill
+        priority
+        sizes="(min-width: 1024px) calc(100vw - 17rem), 100vw"
+        className="-z-20 object-cover object-center"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(30_27_25/0.94)_0%,rgb(30_27_25/0.86)_55%,rgb(30_27_25/0.72)_100%)]"
+      />
+
       <div className="mx-auto w-full max-w-5xl">
         {/* ---------- Marca: logo + nome (um conjunto só) ---------- */}
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">

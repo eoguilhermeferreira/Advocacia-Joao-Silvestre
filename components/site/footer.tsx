@@ -77,6 +77,19 @@ export function Footer() {
             Política de Privacidade
           </Link>
         </div>
+
+        {/* Crédito da agência que desenvolveu o site */}
+        <div className="mt-8 flex items-center justify-center gap-3 border-t border-cream/10 pt-6 text-xs tracking-[0.12em] uppercase sm:justify-start">
+          <span>Desenvolvido por</span>
+          <Image
+            src="/nodex.png"
+            alt="Nodex – Agência de Marketing Digital"
+            width={640}
+            height={131}
+            sizes="120px"
+            className="h-auto w-[7.5rem]"
+          />
+        </div>
       </div>
     </footer>
   );
