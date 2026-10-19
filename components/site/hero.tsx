@@ -15,8 +15,8 @@ export function Hero() {
     >
       {/*
         Fundo: foto da fachada com sombreado por cima.
-        - Celular: a foto aparece inteira (quadrada) no topo e o sombreado escurece para baixo,
-          onde ficam os textos.
+        - Celular: a foto aparece inteira (quadrada) no topo, toda coberta por sombreado
+          (mais forte embaixo, onde ficam os textos).
         - Tablet/desktop: a foto cobre o hero; o sombreado é forte à esquerda (texto) e leve à direita.
       */}
       <div aria-hidden="true" className="absolute inset-x-0 top-0 -z-20 aspect-square sm:inset-0 sm:aspect-auto">
@@ -31,7 +31,7 @@ export function Hero() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 -z-10 aspect-square bg-[linear-gradient(180deg,rgb(30_27_25/0.2)_0%,rgb(30_27_25/0.35)_30%,rgb(30_27_25/0.78)_50%,rgb(30_27_25/0.9)_66%,rgb(30_27_25/1)_92%)] sm:inset-0 sm:aspect-auto sm:bg-[linear-gradient(100deg,rgb(30_27_25/0.93)_0%,rgb(30_27_25/0.88)_60%,rgb(30_27_25/0.55)_80%,rgb(30_27_25/0.3)_100%)]"
+        className="absolute inset-x-0 top-0 -z-10 aspect-square bg-[linear-gradient(180deg,rgb(30_27_25/0.72)_0%,rgb(30_27_25/0.76)_45%,rgb(30_27_25/0.88)_68%,rgb(30_27_25/1)_94%)] sm:inset-0 sm:aspect-auto sm:bg-[linear-gradient(100deg,rgb(30_27_25/0.93)_0%,rgb(30_27_25/0.88)_60%,rgb(30_27_25/0.55)_80%,rgb(30_27_25/0.3)_100%)]"
       />
 
       <div className="mx-auto w-full max-w-5xl">
