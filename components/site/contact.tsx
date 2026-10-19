@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MailIcon, MapPinIcon, PhoneIcon, SmartphoneIcon } from "lucide-react";
 
 import { siteConfig } from "@/lib/site-config";
@@ -99,32 +98,16 @@ export function Contact() {
           </Reveal>
         </div>
 
-        {/* Mapa + fachada lado a lado */}
-        <div className="mt-12 grid gap-6 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
-          <Reveal className="relative min-h-80 overflow-hidden border border-ink/10 bg-paper md:min-h-0">
-            <iframe
-              src={mapSrc}
-              title={`Mapa: ${address.full}`}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="absolute inset-0 h-full w-full border-0"
-            />
-          </Reveal>
-          <Reveal as="figure" delay={100} className="relative">
-            <div className="relative aspect-square overflow-hidden border border-ink/10">
-              <Image
-                src="/fachada.jpg"
-                alt="Fachada do escritório Advocacia João Silvestre Sobrinho, Rua Domiciano Santana, 960, Avaré"
-                fill
-                sizes="(min-width: 1280px) 440px, (min-width: 768px) 40vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-            <figcaption className="mt-3 text-sm text-muted-ink">
-              Fachada do escritório, na Rua Domiciano Santana, 960.
-            </figcaption>
-          </Reveal>
-        </div>
+        {/* Mapa */}
+        <Reveal className="relative mt-12 h-80 overflow-hidden border border-ink/10 bg-paper sm:h-96">
+          <iframe
+            src={mapSrc}
+            title={`Mapa: ${address.full}`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0 h-full w-full border-0"
+          />
+        </Reveal>
       </div>
     </section>
   );

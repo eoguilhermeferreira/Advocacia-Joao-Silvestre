@@ -96,6 +96,9 @@ export const siteConfig = {
   whatsappMessages: {
     default:
       "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho e gostaria de agendar um atendimento.",
+    /** Usada no CTA abaixo das áreas, para quem não encontrou o próprio caso */
+    question:
+      "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho e gostaria de tirar uma dúvida sobre a minha situação.",
     /** {area} é substituído pelo nome completo da área */
     area: "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho e gostaria de falar sobre um assunto de {area}.",
   },

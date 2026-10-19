@@ -1,5 +1,6 @@
 import { About } from "@/components/site/about";
 import { Contact } from "@/components/site/contact";
+import { CtaBand } from "@/components/site/cta";
 import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
 import { JsonLd } from "@/components/site/json-ld";
@@ -24,6 +25,12 @@ export default function Home() {
           <About />
           <PracticeAreas />
           <Lawyers />
+          {/* CTA 3 */}
+          <CtaBand
+            title="Atendimento presencial em Avaré"
+            text="Venha até o escritório, no bairro Santa Cruz, ou comece a conversa pelo WhatsApp."
+            label="Falar no WhatsApp"
+          />
           <Contact />
         </main>
         <Footer />

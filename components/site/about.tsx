@@ -2,6 +2,7 @@ import Image from "next/image";
 import { EyeIcon, LockKeyholeIcon, MessageCircleIcon } from "lucide-react";
 
 import { siteConfig } from "@/lib/site-config";
+import { InlineCta } from "./cta";
 import { Reveal } from "./reveal";
 
 const values = [
@@ -91,6 +92,15 @@ export function About() {
               </Reveal>
             ))}
           </ul>
+
+          {/* CTA 1 */}
+          <InlineCta
+            className="mt-12"
+            title="Quer conversar sobre a sua situação?"
+            text="Agende um atendimento pelo WhatsApp ou ligue para o escritório."
+            label="Agendar atendimento"
+            showPhone
+          />
         </div>
       </div>
     </section>

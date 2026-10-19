@@ -10,6 +10,7 @@ import {
 
 import { siteConfig, type PracticeAreaId } from "@/lib/site-config";
 import { whatsappAreaUrl } from "@/lib/whatsapp";
+import { InlineCta } from "./cta";
 import { Reveal } from "./reveal";
 
 const icons: Record<PracticeAreaId, LucideIcon> = {
@@ -82,6 +83,15 @@ export function PracticeAreas() {
             );
           })}
         </ul>
+
+        {/* CTA 2 */}
+        <InlineCta
+          className="mt-10"
+          title="Não encontrou o seu caso na lista?"
+          text="Envie uma mensagem contando brevemente a situação. O escritório informa se pode atender e como funciona o atendimento."
+          label="Tirar uma dúvida"
+          message={siteConfig.whatsappMessages.question}
+        />
       </div>
     </section>
   );
