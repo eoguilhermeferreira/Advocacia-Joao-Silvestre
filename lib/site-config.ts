@@ -58,8 +58,8 @@ export type Lawyer = {
 
 export const siteConfig = {
   url: siteUrl,
-  name: "Advocacia João Silvestre Sobrinho",
-  shortName: "Advocacia João Silvestre",
+  name: "Advocacia Dr. João Silvestre Sobrinho",
+  shortName: "Advocacia Dr. João Silvestre",
   city: "Avaré",
   state: "SP",
 
@@ -95,12 +95,12 @@ export const siteConfig = {
   // ---------------------------------------------------------------------------
   whatsappMessages: {
     default:
-      "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho e gostaria de agendar um atendimento.",
+      "Olá! Vim pelo site da Advocacia Dr. João Silvestre Sobrinho e gostaria de agendar um atendimento.",
     /** Usada no CTA abaixo das áreas, para quem não encontrou o próprio caso */
     question:
-      "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho e gostaria de tirar uma dúvida sobre a minha situação.",
+      "Olá! Vim pelo site da Advocacia Dr. João Silvestre Sobrinho e gostaria de tirar uma dúvida sobre a minha situação.",
     /** {area} é substituído pelo nome completo da área */
-    area: "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho e gostaria de falar sobre um assunto de {area}.",
+    area: "Olá! Vim pelo site da Advocacia Dr. João Silvestre Sobrinho e gostaria de falar sobre um assunto de {area}.",
   },
 
   // ---------------------------------------------------------------------------
@@ -157,7 +157,7 @@ export const siteConfig = {
   lawyers: [
     {
       id: "joao",
-      name: "João Silvestre Sobrinho",
+      name: "Dr. João Silvestre Sobrinho",
       oab: "OAB/SP 303.347",
       // TODO: preencher — salve a foto em /public/joao.jpg e troque para "/joao.jpg"
       photo: null,
@@ -165,7 +165,7 @@ export const siteConfig = {
       // TODO: confirmar se o Dr. João atua pessoalmente em todas as áreas
       areas: ["civel", "familia", "previdenciario", "trabalhista", "tributario"],
       bio: [
-        "Advogado responsável pela Advocacia João Silvestre Sobrinho, em Avaré. Atende pessoas, famílias e empresas de Avaré e região nas áreas cível, de família, previdenciária, trabalhista e tributária.",
+        "Advogado responsável pela Advocacia Dr. João Silvestre Sobrinho, em Avaré. Atende pessoas, famílias e empresas de Avaré e região nas áreas cível, de família, previdenciária, trabalhista e tributária.",
         "Seu trabalho parte de uma conversa franca: entender a situação, analisar os documentos e explicar as alternativas possíveis em linguagem clara.",
       ],
     },
@@ -182,7 +182,7 @@ export const siteConfig = {
       areas: [],
       // TODO: preencher a mini-bio do Dr. Rubens
       bio: [
-        "Advogado integrante da equipe da Advocacia João Silvestre Sobrinho, em Avaré.",
+        "Advogado integrante da equipe da Advocacia Dr. João Silvestre Sobrinho, em Avaré.",
       ],
     },
   ] as Lawyer[],

@@ -47,7 +47,7 @@ function validate(f: Fields): Errors {
 function buildMessage(f: Fields) {
   const area = siteConfig.practiceAreas.find((a) => a.id === f.area);
   return [
-    "Olá! Vim pelo site da Advocacia João Silvestre Sobrinho.",
+    "Olá! Vim pelo site da Advocacia Dr. João Silvestre Sobrinho.",
     "",
     `*Nome:* ${f.name.trim()}`,
     `*Área do assunto:* ${area?.fullName ?? f.area}`,

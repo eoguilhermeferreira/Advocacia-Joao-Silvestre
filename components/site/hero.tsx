@@ -39,7 +39,7 @@ export function Hero() {
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">
           <Image
             src="/logo-claro.png"
-            alt="Logo da Advocacia João Silvestre Sobrinho: a deusa da justiça, Têmis, segurando a balança"
+            alt="Logo da Advocacia Dr. João Silvestre Sobrinho: a deusa da justiça, Têmis, segurando a balança"
             width={829}
             height={735}
             priority
@@ -47,10 +47,10 @@ export function Hero() {
             className="h-auto w-28 shrink-0 sm:w-44"
           />
           <div className="flex flex-col gap-3">
-            <p className="font-serif text-[2.125rem] leading-[1.08] font-medium text-gold sm:text-5xl xl:text-[3.5rem]">
+            <p className="font-serif text-[2.125rem] leading-[1.08] font-medium text-gold sm:text-5xl xl:text-[3.125rem]">
               Advocacia
               <br />
-              João Silvestre Sobrinho
+              Dr. João Silvestre Sobrinho
             </p>
             <p className="text-sm tracking-[0.16em] text-muted-cream uppercase">
               OAB/SP 303.347 <span aria-hidden="true">·</span> Avaré – SP

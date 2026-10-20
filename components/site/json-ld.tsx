@@ -41,6 +41,7 @@ export function JsonLd() {
         "@type": "Person",
         "@id": `${siteConfig.url}/#joao-silvestre-sobrinho`,
         name: "João Silvestre Sobrinho",
+        honorificPrefix: "Dr.",
         jobTitle: "Advogado",
         identifier: { "@type": "PropertyValue", propertyID: "OAB/SP", value: "303.347" },
         worksFor: { "@id": `${siteConfig.url}/#escritorio` },

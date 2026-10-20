@@ -1,6 +1,6 @@
-# Advocacia João Silvestre Sobrinho — site institucional
+# Advocacia Dr. João Silvestre Sobrinho — site institucional
 
-Site one-page do escritório **Advocacia João Silvestre Sobrinho** (Avaré – SP), feito em
+Site one-page do escritório **Advocacia Dr. João Silvestre Sobrinho** (Avaré – SP), feito em
 Next.js 16 (App Router) + TypeScript + Tailwind CSS 4 + componentes no padrão shadcn/ui.
 
 ## Onde editar

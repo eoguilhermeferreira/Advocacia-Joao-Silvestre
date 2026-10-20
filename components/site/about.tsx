@@ -33,7 +33,7 @@ export function About() {
           <div className="relative aspect-square overflow-hidden bg-ink">
             <Image
               src="/fachada.jpg"
-              alt="Fachada do escritório Advocacia João Silvestre Sobrinho, Rua Domiciano Santana, 960, Avaré"
+              alt="Fachada do escritório Advocacia Dr. João Silvestre Sobrinho, Rua Domiciano Santana, 960, Avaré"
               fill
               sizes="(min-width: 1024px) 420px, 90vw"
               className="object-cover"
@@ -52,9 +52,9 @@ export function About() {
           {/* TODO: revisar os textos abaixo com o Dr. João */}
           <Reveal delay={80} className="mt-8 space-y-5 text-[1.0625rem] leading-relaxed text-muted-ink">
             <p>
-              <strong className="font-semibold text-ink">João Silvestre Sobrinho</strong> é advogado inscrito na{" "}
+              <strong className="font-semibold text-ink">Dr. João Silvestre Sobrinho</strong> é advogado inscrito na{" "}
               <strong className="font-semibold text-ink">OAB/SP sob o nº 303.347</strong> e responsável pela Advocacia
-              João Silvestre Sobrinho, no bairro Santa Cruz, em Avaré.
+              Dr. João Silvestre Sobrinho, no bairro Santa Cruz, em Avaré.
             </p>
             <p>
               O escritório atua nas áreas cível, de família, previdenciária, trabalhista e tributária, atendendo

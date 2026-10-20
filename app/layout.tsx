@@ -21,9 +21,9 @@ const sourceSans = Source_Sans_3({
   display: "swap",
 });
 
-const title = "Advogado em Avaré – SP | Advocacia João Silvestre Sobrinho";
+const title = "Advogado em Avaré – SP | Advocacia Dr. João Silvestre Sobrinho";
 const description =
-  "Escritório de advocacia em Avaré – SP. Atuação nas áreas cível, de família, previdenciária, trabalhista e tributária. João Silvestre Sobrinho, OAB/SP 303.347. Atendimento presencial e pelo WhatsApp.";
+  "Escritório de advocacia em Avaré – SP. Atuação nas áreas cível, de família, previdenciária, trabalhista e tributária. Dr. João Silvestre Sobrinho, OAB/SP 303.347. Atendimento presencial e pelo WhatsApp.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   description,
   applicationName: siteConfig.name,
-  authors: [{ name: "João Silvestre Sobrinho" }],
+  authors: [{ name: "Dr. João Silvestre Sobrinho" }],
   alternates: { canonical: "/" },
   formatDetection: { telephone: false },
   openGraph: {

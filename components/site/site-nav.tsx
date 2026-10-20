@@ -105,7 +105,7 @@ export function SiteNav() {
           <span className="font-serif text-xl leading-tight font-semibold text-gold">
             Advocacia
             <br />
-            João Silvestre Sobrinho
+            Dr. João Silvestre Sobrinho
           </span>
           <span className="text-xs tracking-[0.14em] text-muted-cream uppercase">OAB/SP 303.347</span>
         </a>
@@ -132,7 +132,7 @@ export function SiteNav() {
         <a href="#inicio" className="flex min-w-0 items-center gap-2.5 rounded-sm">
           <Image src="/logo-claro.png" alt="" width={44} height={39} className="h-auto w-11 shrink-0" />
           <span className="truncate font-serif text-lg leading-tight font-semibold text-gold">
-            Advocacia João Silvestre
+            Advocacia Dr. João Silvestre
           </span>
           <span className="sr-only"> Sobrinho — voltar ao início</span>
         </a>
@@ -152,7 +152,7 @@ export function SiteNav() {
               <Image src="/logo-claro.png" alt="" width={56} height={50} className="h-auto w-14" />
               <div>
                 <SheetTitle className="font-serif text-lg leading-tight font-semibold text-gold">
-                  Advocacia João Silvestre Sobrinho
+                  Advocacia Dr. João Silvestre Sobrinho
                 </SheetTitle>
                 <SheetDescription className="text-xs tracking-[0.12em] text-muted-cream uppercase">
                   OAB/SP 303.347

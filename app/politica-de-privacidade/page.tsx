@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Política de Privacidade",
   description:
-    "Como a Advocacia João Silvestre Sobrinho, em Avaré – SP, trata os dados enviados pelo site, de acordo com a LGPD.",
+    "Como a Advocacia Dr. João Silvestre Sobrinho, em Avaré – SP, trata os dados enviados pelo site, de acordo com a LGPD.",
   alternates: { canonical: "/politica-de-privacidade" },
 };
 

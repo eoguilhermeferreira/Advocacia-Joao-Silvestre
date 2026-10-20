@@ -15,7 +15,7 @@ export function Footer() {
             <Image src="/logo-claro.png" alt="" width={72} height={64} className="h-auto w-[4.5rem] shrink-0" />
             <div>
               <p className="font-serif text-2xl leading-tight font-semibold text-gold">{siteConfig.name}</p>
-              <p className="mt-2 text-sm tracking-[0.14em] uppercase">João Silvestre Sobrinho · OAB/SP 303.347</p>
+              <p className="mt-2 text-sm tracking-[0.14em] uppercase">Dr. João Silvestre Sobrinho · OAB/SP 303.347</p>
             </div>
           </div>
 
