@@ -20,7 +20,6 @@ Procure por `TODO: preencher` no código para ver tudo o que ainda falta.
 
 ### Pendências (placeholders)
 
-- **Foto do Dr. João**: salve em `public/joao.jpg` (retrato vertical, ~800×1000 px) e troque `photo: null` por `photo: "/joao.jpg"`.
 - **Formação do Dr. João**: lista `education` (o bloco só aparece quando houver itens).
 - **Domínio**: defina `NEXT_PUBLIC_SITE_URL` na Vercel (ex.: `https://www.seudominio.com.br`).
 - **Revisão de textos**: confirmar com o Dr. João os exemplos de cada área, o texto "Sobre" e a Política de Privacidade.

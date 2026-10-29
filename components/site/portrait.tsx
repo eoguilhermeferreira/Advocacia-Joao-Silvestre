@@ -19,7 +19,7 @@ export function Portrait({ name, initials, photo, className, sizes = "(min-width
       <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 border border-bronze/60" />
       <div className="relative aspect-[4/5] overflow-hidden bg-ink">
         {photo ? (
-          <Image src={photo} alt={`Foto de ${name}`} fill sizes={sizes} className="object-cover" />
+          <Image src={photo} alt={`Foto de ${name}`} fill sizes={sizes} className="object-cover object-top" />
         ) : (
           // TODO: preencher — enquanto não houver foto, exibimos as iniciais
           <div

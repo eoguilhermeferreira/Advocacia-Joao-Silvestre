@@ -159,8 +159,7 @@ export const siteConfig = {
       id: "joao",
       name: "Dr. João Silvestre Sobrinho",
       oab: "OAB/SP 303.347",
-      // TODO: preencher — salve a foto em /public/joao.jpg e troque para "/joao.jpg"
-      photo: null,
+      photo: "/joao.jpg",
       initials: "JS",
       // TODO: confirmar se o Dr. João atua pessoalmente em todas as áreas
       areas: ["civel", "familia", "previdenciario", "trabalhista", "tributario"],
