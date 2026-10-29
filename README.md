@@ -8,7 +8,7 @@ Next.js 16 (App Router) + TypeScript + Tailwind CSS 4 + componentes no padrão s
 | O que trocar | Arquivo |
 | --- | --- |
 | Telefones, WhatsApp, e-mail, endereço, mensagens padrão do WhatsApp | `lib/site-config.ts` |
-| Advogados (nome, OAB, foto, áreas, mini-bio) | `lib/site-config.ts` → `lawyers` |
+| Advogado (nome, OAB, foto, áreas, mini-bio) | `lib/site-config.ts` → `lawyers` |
 | Formação do Dr. João | `lib/site-config.ts` → `education` |
 | Textos das áreas de atuação | `lib/site-config.ts` → `practiceAreas` |
 | Texto da seção "Sobre" | `components/site/about.tsx` |
@@ -21,9 +21,6 @@ Procure por `TODO: preencher` no código para ver tudo o que ainda falta.
 ### Pendências (placeholders)
 
 - **Foto do Dr. João**: salve em `public/joao.jpg` (retrato vertical, ~800×1000 px) e troque `photo: null` por `photo: "/joao.jpg"`.
-- **Foto do Dr. Rubens**: `public/rubens.jpg` → `photo: "/rubens.jpg"`.
-- **OAB do Dr. Rubens**: preencha `oab` (ex.: `"OAB/SP 000.000"`). Enquanto estiver vazio, a linha da OAB não aparece. Pelas regras da OAB, não publique o site sem esse número.
-- **Áreas e mini-bio do Dr. Rubens**: `areas` e `bio`.
 - **Formação do Dr. João**: lista `education` (o bloco só aparece quando houver itens).
 - **Domínio**: defina `NEXT_PUBLIC_SITE_URL` na Vercel (ex.: `https://www.seudominio.com.br`).
 - **Revisão de textos**: confirmar com o Dr. João os exemplos de cada área, o texto "Sobre" e a Política de Privacidade.

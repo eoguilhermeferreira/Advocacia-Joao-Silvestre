@@ -169,22 +169,8 @@ export const siteConfig = {
         "Seu trabalho parte de uma conversa franca: entender a situação, analisar os documentos e explicar as alternativas possíveis em linguagem clara.",
       ],
     },
-    {
-      id: "rubens",
-      name: "Rubens de Oliveira",
-      // TODO: preencher — ex.: "OAB/SP 000.000". Enquanto for null, a linha da OAB não aparece.
-      // ATENÇÃO: pelas regras da OAB, publique o site com o número preenchido.
-      oab: null,
-      // TODO: preencher — salve a foto em /public/rubens.jpg e troque para "/rubens.jpg"
-      photo: null,
-      initials: "RO",
-      // TODO: preencher com as áreas em que o Dr. Rubens atua
-      areas: [],
-      // TODO: preencher a mini-bio do Dr. Rubens
-      bio: [
-        "Advogado integrante da equipe da Advocacia Dr. João Silvestre Sobrinho, em Avaré.",
-      ],
-    },
+    // Para incluir outro advogado, adicione um objeto igual ao de cima.
+    // Com mais de um advogado, a seção passa a mostrar abas automaticamente.
   ] as Lawyer[],
 
   // ---------------------------------------------------------------------------
