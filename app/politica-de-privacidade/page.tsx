@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
       <header className="texture-grain bg-ink px-5 py-6 sm:px-10">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3 rounded-sm">
-            <Image src="/logo-claro.png" alt="" width={44} height={39} className="h-auto w-11" />
+            <Image src="/logo-claro.webp" alt="" width={44} height={39} className="h-auto w-11" />
             <span className="font-serif text-lg leading-tight font-semibold text-gold">{siteConfig.name}</span>
           </Link>
         </div>

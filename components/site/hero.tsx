@@ -21,7 +21,7 @@ export function Hero() {
       */}
       <div aria-hidden="true" className="absolute inset-x-0 top-0 -z-20 aspect-square sm:inset-0 sm:aspect-auto">
         <Image
-          src="/fachada.jpg"
+          src="/fachada.webp"
           alt=""
           fill
           priority
@@ -38,7 +38,7 @@ export function Hero() {
         {/* ---------- Marca: logo + nome (um conjunto só) ---------- */}
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">
           <Image
-            src="/logo-claro.png"
+            src="/logo-claro.webp"
             alt="Logo da Advocacia Dr. João Silvestre Sobrinho: a deusa da justiça, Têmis, segurando a balança"
             width={829}
             height={735}

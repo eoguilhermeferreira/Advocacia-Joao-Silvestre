@@ -47,7 +47,7 @@ export type Lawyer = {
   /** Ex.: "OAB/SP 303.347". Deixe null enquanto não tiver o número. */
   oab: string | null;
   /**
-   * Caminho da foto dentro de /public (ex.: "/joao.jpg").
+   * Caminho da foto dentro de /public (ex.: "/joao.webp").
    * Enquanto for null, o site mostra um quadro neutro com as iniciais.
    */
   photo: string | null;
@@ -159,7 +159,7 @@ export const siteConfig = {
       id: "joao",
       name: "Dr. João Silvestre Sobrinho",
       oab: "OAB/SP 303.347",
-      photo: "/joao.jpg",
+      photo: "/joao.webp",
       initials: "JS",
       // TODO: confirmar se o Dr. João atua pessoalmente em todas as áreas
       areas: ["civel", "familia", "previdenciario", "trabalhista", "tributario"],

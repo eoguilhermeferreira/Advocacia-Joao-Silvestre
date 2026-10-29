@@ -4,8 +4,11 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-    qualities: [75],
+    // O otimizador de imagens da Vercel tem cota no plano Hobby (compartilhada
+    // entre todos os projetos da conta). Quando ela acaba, as imagens quebram
+    // (erro 402). Por isso as imagens já são salvas otimizadas em /public
+    // (WebP, no tamanho certo) e servidas direto, sem passar pelo otimizador.
+    unoptimized: true,
   },
   turbopack: {
     rules: {

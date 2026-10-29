@@ -32,7 +32,7 @@ export function About() {
           <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 border border-bronze/60" />
           <div className="relative aspect-square overflow-hidden bg-ink">
             <Image
-              src="/fachada.jpg"
+              src="/fachada.webp"
               alt="Fachada do escritório Advocacia Dr. João Silvestre Sobrinho, Rua Domiciano Santana, 960, Avaré"
               fill
               sizes="(min-width: 1024px) 420px, 90vw"

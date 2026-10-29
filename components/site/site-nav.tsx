@@ -101,7 +101,7 @@ export function SiteNav() {
       {/* ---------- Sidebar (desktop) ---------- */}
       <aside className="texture-grain fixed inset-y-0 left-0 z-40 hidden w-68 flex-col border-r border-bronze/20 bg-ink px-6 py-8 lg:flex">
         <a href="#inicio" className="flex flex-col items-center gap-3 rounded-sm text-center">
-          <Image src="/logo-claro.png" alt="" width={96} height={85} className="h-auto w-24" />
+          <Image src="/logo-claro.webp" alt="" width={96} height={85} className="h-auto w-24" />
           <span className="font-serif text-xl leading-tight font-semibold text-gold">
             Advocacia
             <br />
@@ -130,7 +130,7 @@ export function SiteNav() {
       {/* ---------- Barra superior (celular e tablet) ---------- */}
       <header className="sticky top-0 z-40 flex h-16 items-center justify-between gap-3 border-b border-bronze/20 bg-ink/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-ink/85 lg:hidden">
         <a href="#inicio" className="flex min-w-0 items-center gap-2.5 rounded-sm">
-          <Image src="/logo-claro.png" alt="" width={44} height={39} className="h-auto w-11 shrink-0" />
+          <Image src="/logo-claro.webp" alt="" width={44} height={39} className="h-auto w-11 shrink-0" />
           <span className="truncate font-serif text-lg leading-tight font-semibold text-gold">
             Advocacia Dr. João Silvestre
           </span>
@@ -149,7 +149,7 @@ export function SiteNav() {
             onCloseAutoFocus={handleSheetClosed}
           >
             <div className="flex items-center gap-3 pr-10">
-              <Image src="/logo-claro.png" alt="" width={56} height={50} className="h-auto w-14" />
+              <Image src="/logo-claro.webp" alt="" width={56} height={50} className="h-auto w-14" />
               <div>
                 <SheetTitle className="font-serif text-lg leading-tight font-semibold text-gold">
                   Advocacia Dr. João Silvestre Sobrinho

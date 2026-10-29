@@ -12,7 +12,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-10 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)]">
           <div className="flex items-start gap-4">
-            <Image src="/logo-claro.png" alt="" width={72} height={64} className="h-auto w-[4.5rem] shrink-0" />
+            <Image src="/logo-claro.webp" alt="" width={72} height={64} className="h-auto w-[4.5rem] shrink-0" />
             <div>
               <p className="font-serif text-2xl leading-tight font-semibold text-gold">{siteConfig.name}</p>
               <p className="mt-2 text-sm tracking-[0.14em] uppercase">Dr. João Silvestre Sobrinho · OAB/SP 303.347</p>
@@ -88,7 +88,7 @@ export function Footer() {
             className="rounded-sm transition-opacity hover:opacity-85"
           >
             <Image
-              src="/nodex.png"
+              src="/nodex.webp"
               alt="Nodex – Agência de Marketing Digital (Instagram @agencynodex, abre em nova aba)"
               width={640}
               height={131}
